@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tri.css">
+    <title>Tri des Déchets</title>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Tri des Déchets</h1>
+        <div id="trash-can-container">
+            <div class="trash-can" id="cardboard-bin"></div>
+            <div class="trash-can" id="paper-bin"></div>
+            <div class="trash-can" id="glass-bin"></div>
+        </div>
+        <div id="drag-elements">
+            <img src="cardboard.png" class="draggable" id="cardboard" draggable="true" ondragstart="drag(event)">
+            <img src="paper.png" class="draggable" id="paper" draggable="true" ondragstart="drag(event)">
+            <img src="glass.png" class="draggable" id="glass" draggable="true" ondragstart="drag(event)">
+        </div>
+        <p id="points">Points: 0</p>
+    </div>
+    <script src="tri.js"></script>
+</body>
+</html>
