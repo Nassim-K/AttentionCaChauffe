@@ -553,6 +553,8 @@ function initGame() {
 
 function changerAnnee() {
     if (annee < 2023) {
+        $('.logo img').attr('src', 'assets/logo_AttentionCaChauffe_charlie.png');
+
         annee++;
         $(ANNEE).text("Année : " + annee);
         $(SUIVANT).hide();
@@ -609,13 +611,13 @@ function changerAnnee() {
                     changerAnnee();
                 }
 
-                $(REP1).one("click", function () {
+                $(REP1).off().one("click", function () {
                     onRepClick(0, catastrophe.choix[0]);
                 });
-                $(REP2).one("click", function () {
+                $(REP2).off().one("click", function () {
                     onRepClick(1, catastrophe.choix[1]);
                 });
-                $(REP3).one("click", function () {
+                $(REP3).off().one("click", function () {
                     onRepClick(2, catastrophe.choix[2]);
                 });
             }
