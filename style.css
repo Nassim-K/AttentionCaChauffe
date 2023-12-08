@@ -7,6 +7,10 @@ body {
     flex-direction:column
 }
 
+*{
+    font-family: Hack, monospace; 
+}
+
 .logo {
     position: absolute;
     top: 0;
@@ -106,19 +110,45 @@ body {
     align-items: center;
     padding:0 50px 0 250px;
 }
+
 .flash .suivant{
     position:absolute;
     right:0;
     bottom:20px;
-    background-color:orange;
-    padding:10px 20px;
+    font-family: Hack, monospace;
+    color: #ffffff;
+    background-color:red;
+    padding:20px 20px;
     border:unset;
     font-size:20px;
     font-weight:bold;
     cursor:pointer;
+    margin-right: 5px;
+    border-radius: 10px;
 }
+
+.flash .suivant:hover{
+    background: #b70000;
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px #681100cc;
+}
+
+
 .flash .presentateur {
     position:absolute;
     left:20px;
     bottom:0;
+}
+
+.argent {
+    font-family: Hack, monospace;
+    color: #ffffff;
+    font-size:20px;
+}
+
+.joker {
+    font-family: Hack, monospace;
+    color: #ffffff;
+    font-size:20px;
 }
