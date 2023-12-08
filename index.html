@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="app.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="game">
-
         <div class="logo">
             <img src="assets/logo_AttentionCaChauffe.png" alt="">
         </div>
@@ -21,31 +19,40 @@
         <div class="stats">
             <div class="argent">
                 <img src="assets/dollar.png" alt="">
-                <span class="valeurArgent">100 000 000</span>
+                <span class="valeurArgent"></span>
             </div>
             <div class="joker">
                 <img src="assets/joker.png" alt="">
-                <span class="valeurJoker">3</span>
+                <span class="valeurJoker"></span>
             </div>
             
         </div>
         <div class="temperature">
-            <div class="barre"></div>
-            <span class="pourcentage">50%</span>
+            <div class="barre">
+                <div class="progress"></div>
+            </div>
+            <span class="pourcentage"></span>
         </div>
         <div class="map">
             <div class="map-img"></div>
         </div>
         <div class="flash">
             <div class="flash-up">
-                <h1>HEADLINE</h1>
+                <h1></h1>
             </div>
             <div class="flash-down">
-                <span>contenu</span>
+                <span></span>
+                <div class="reponses">
+                    <button class="rep1">Mettre en place des politiques de réduction de la consommation d'énergie</button>
+                    <button class="rep2">Mettre en place des politiques de réduction de la consommation d'énergie</button>
+                    <button class="rep3">Mettre en place des politiques de réduction de la consommation d'énergie</button>
+                </div>
             </div>
             <img src="assets/presentateur.png" alt="" class="presentateur">
             <button class="suivant">ANNÉE SUIVANTE ></button>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

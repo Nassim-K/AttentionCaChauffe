@@ -57,16 +57,18 @@ body {
     background-color:#fff;
     border-radius:99px;
     position:relative;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,.5);
 }
-.temperature .barre::after{
+.temperature .barre .progress{
     content:'';
     position:absolute;
     top:0;
     bottom:0;
     left:0;
     height:100%;
-    width:50%;
-    background-color:red;
+    width:0%;
+    background-color:green;
     border-radius:99px;
 }
 .temperature .pourcentage {
@@ -95,22 +97,41 @@ body {
     flex-direction:column;
     position:relative;
 }
-.flash .flash-up{
-    height:30%;
-    background-color:red;
-    color:#fff;
-    display:flex;
+.flash .flash-up {
+    height: 30%;
+    background-color: red;
+    color: #fff;
+    display: flex;
     align-items: center;
-    padding:0 50px 0 250px;
+    padding: 0 50px 0 250px;
+    overflow: hidden;
+}
+.flash .flash-up h1 {
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 .flash .flash-down{
     height:100%;
     background-color:white;
     display:flex;
+    flex-direction:column;
     align-items: center;
+    justify-content: center;
     padding:0 50px 0 250px;
 }
-
+.flash .flash-down .reponses {
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
 .flash .suivant{
     position:absolute;
     right:0;
