@@ -6,13 +6,13 @@ const CATASTROPHES = {
             {
                 'texte': 'Investir 25% dans des entreprises produisant des véhicules hybrides',
                 'temperature': -0.15, // température diminuée aléatoirement
-                'argent': -100000,
+                'argent': -1000000,
 
             },
             {
                 'texte': 'Mettre en place des politiques strictes de réduction des déchets plastiques',
-                'temperature': -0.25, // température diminuée aléatoirement
-                'argent': -20000,
+                'temperature': -0.07, // température diminuée aléatoirement
+                'argent': -200000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
@@ -28,16 +28,16 @@ const CATASTROPHES = {
             {
                 'texte': "Augmenter le prix de l'essence en Europe pour encourager une conduite responsable",
                 'temperature': -0.02, // température diminuée aléatoirement
-                'argent': -50000,
+                'argent': -500000,
             },
             {
                 'texte': 'Financer la recherche sur des technologies écologiques avancées (15%)',
                 'temperature':-0.07, // température diminuée aléatoirement
-                'argent': -102000,
+                'argent': -1020000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': +0.12, // température augmentée aléatoirement
+                'temperature': +0.17, // température augmentée aléatoirement
                 
             }
         ]
@@ -49,16 +49,16 @@ const CATASTROPHES = {
             {
                 'texte': 'Investir dans les énergies durables',
                 'temperature': -0.05, // température diminuée aléatoirement
-                'argent': -140000,
+                'argent': -1400000,
             },
             {
                 'texte': 'Mettre en place des politiques de réduction de la consommation d\'énergie',
                 'temperature': -0.03, // température diminuée aléatoirement
-                'argent': -280000,
+                'argent': -2800000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature':+0.19, // température augmentée aléatoirement
+                'temperature':+0.10, // température augmentée aléatoirement
 
             }
         ]
@@ -70,12 +70,12 @@ const CATASTROPHES = {
             {
                 'texte': 'Investir dans des systèmes d\'alerte au tsunami et des infrastructures de protection côtière',
                 'temperature': -0.05, // température diminuée aléatoirement
-                'argent': -10000,
+                'argent': -100000,
             },
             {
                 'texte': 'Mettre en place des politiques de zonage pour restreindre le développement côtier',
                 'temperature': -0.08, // température diminuée aléatoirement
-                'argent': -10000,
+                'argent': -100000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
@@ -91,12 +91,12 @@ const CATASTROPHES = {
             {
                 'texte': 'Investir dans des systèmes d\'alerte au tsunami et des infrastructures de protection côtière',
                 'temperature': -0.05,
-                'argent': -10000,
+                'argent': -100000,
             },
             {
                 'texte': 'Mettre en place des politiques de zonage pour restreindre le développement côtier',
                 'temperature': -0.08,
-                'argent': -10000,
+                'argent': -100000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
@@ -112,16 +112,16 @@ const CATASTROPHES = {
             {
                 'texte': 'Investir dans la mise à niveau des infrastructures pour résister aux ouragans',
                 'temperature': -0.1,
-                'argent': -10000,
+                'argent': -100000,
             },
             {
                 'texte': 'Mettre en place des politiques de gestion des zones inondables et d\'évacuation',
                 'temperature': -0.15,
-                'argent': -10000,
+                'argent': -100000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': +0.2,
+                'temperature': +0.14,
                 
             }
         ]
@@ -132,17 +132,17 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir dans des technologies de réduction de la pollution de l\'air',
-                'temperature': -0.25,
-                'argent': -50000,
+                'temperature': -0.15,
+                'argent': -500000,
             },
             {
                 'texte': 'Mettre en place des politiques strictes pour contrôler les émissions industrielles',
-                'temperature': -0.2,
-                'argent': -60000,
+                'temperature': -0.08,
+                'argent': -600000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': +0.15,
+                'temperature': +0.17,
                 
             }
         ]
@@ -153,17 +153,17 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir massivement dans les énergies renouvelables (20%)',
-                'temperature': -0.3,
-                'argent': -150000,
+                'temperature': -0.13,
+                'argent': -1500000,
             },
             {
                 'texte': 'Mettre en place des réglementations strictes sur les émissions de gaz à effet de serre',
-                'temperature': -0.25,
-                'argent': -120000,
+                'temperature': -0.15,
+                'argent': -1200000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': +0.18,
+                'temperature': +0.09,
                 
             }
         ]
@@ -174,17 +174,17 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir dans la recherche sur le changement climatique et ses impacts (15%)',
-                'temperature': -0.2,
-                'argent': -100000,
+                'temperature': -0.11,
+                'argent': -1000000,
             },
             {
                 'texte': 'Mettre en place des politiques pour réduire les émissions de gaz à effet de serre',
-                'temperature': -0.25,
-                'argent': -130000,
+                'temperature': -0.12,
+                'argent': -1300000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': +0.15,
+                'temperature': +0.05,
                 
             }
         ]
@@ -196,12 +196,12 @@ const CATASTROPHES = {
             {
                 'texte': 'Investir dans des projets de relance verte pour stimuler l\'économie',
                 'temperature': -0.15,
-                'argent': -80000,
+                'argent': -800000,
             },
             {
                 'texte': 'Mettre en place des régulations plus strictes pour maintenir les émissions à des niveaux bas',
-                'temperature': -0.2,
-                'argent': -100000,
+                'temperature': -0.12,
+                'argent': -1000000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
@@ -216,17 +216,17 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Augmenter les réglementations sur l\'industrie pétrolière et gazière',
-                'temperature': -0.2,
-                'argent': -80000,
+                'temperature': -0.12,
+                'argent': -800000,
             },
             {
                 'texte': 'Investir dans la recherche sur les énergies propres (15%)',
                 'temperature': -0.15,
-                'argent': -70000,
+                'argent': -700000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': +0.12,
+                'temperature': +0.08,
                 
             }
         ]
@@ -238,12 +238,12 @@ const CATASTROPHES = {
             {
                 'texte': 'Favoriser le développement des énergies renouvelables et réduire la dépendance au nucléaire',
                 'temperature': -0.1,
-                'argent': -90000,
+                'argent': -900000,
             },
             {
                 'texte': 'Renforcer les normes de sécurité nucléaire et investir dans la recherche sur les technologies nucléaires plus sûres',
                 'temperature': -0.15,
-                'argent': -110000,
+                'argent': -1100000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
@@ -258,13 +258,13 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir dans des projets de gestion de l\'eau et de conservation (20%)',
-                'temperature': -0.15,
-                'argent': -120000,
+                'temperature': -0.05,
+                'argent': -1200000,
             },
             {
                 'texte': 'Mettre en place des politiques de réduction de la consommation d\'eau',
-                'temperature': -0.1,
-                'argent': -80000,
+                'temperature': -0.07,
+                'argent': -800000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
@@ -279,13 +279,13 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Mettre en place des politiques de protection des forêts et de reforestation (20%)',
-                'temperature': -0.2,
-                'argent': -100000,
+                'temperature': -0.02,
+                'argent': -1000000,
             },
             {
                 'texte': 'Imposer des sanctions sévères aux entreprises impliquées dans la déforestation',
-                'temperature': -0.15,
-                'argent': -90000,
+                'temperature': -0.08,
+                'argent': -900000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
@@ -300,18 +300,18 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir dans la modernisation des infrastructures d\'approvisionnement en eau potable',
-                'temperature': -0.12,
-                'argent': -40000,
+                'temperature': -0.09,
+                'argent': -400000,
             },
             {
                 'texte': 'Renforcer les réglementations sur la qualité de l\'eau et les contrôles de sécurité',
-                'temperature': -0.22,
-                'argent': -35000,
+                'temperature': -0.12,
+                'argent': -350000,
             },
             {
                 'texte': 'Ignorer les problèmes liés à la qualité de l\'eau pour économiser de l\'argent',
                 'temperature': 0.15,
-                'argent': 0,
+                
             }
         ]
     },
@@ -321,13 +321,13 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Soutenir activement les initiatives de l\'Accord de Paris (20%), bonus : partenariats internationaux',
-                'temperature': -0.18,
-                'argent': -60000,
+                'temperature': -0.11,
+                'argent': -600000,
             },
             {
                 'texte': 'Investir dans des entreprises respectueuses de l\'environnement (25%)',
-                'temperature': -0.25,
-                'argent': -50000,
+                'temperature': -0.06,
+                'argent': -500000,
             },
             {
                 'texte': 'Ignorer les obligations de l\'Accord de Paris et poursuivre les politiques actuelles',
@@ -342,13 +342,13 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir dans des projets de conservation de la forêt amazonienne (25%), bonus : préservation de la biodiversité',
-                'temperature': -0.15,
-                'argent': -55000,
+                'temperature': -0.13,
+                'argent': -550000,
             },
             {
                 'texte': 'Mettre en place des réglementations strictes sur l\'exploitation forestière',
-                'temperature': -0.2,
-                'argent': -45000,
+                'temperature': -0.12,
+                'argent': -450000,
             },
             {
                 'texte': 'Ignorer les problèmes de déforestation pour favoriser le développement économique',
@@ -363,13 +363,13 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir dans des initiatives d\'adaptation pour les communautés touchées',
-                'temperature': -0.2,
-                'argent': -60000,
+                'temperature': -0.07,
+                'argent': -600000,
             },
             {
                 'texte': 'Plaider en faveur d\'accords internationaux sur les réfugiés climatiques',
-                'temperature': -0.15,
-                'argent': -50000,
+                'temperature': -0.03,
+                'argent': -500000,
             },
             {
                 'texte': 'Ignorer la question des réfugiés climatiques',
@@ -384,14 +384,14 @@ const CATASTROPHES = {
     'choix': [
         {
             'texte': 'Investir dans des technologies de prévention des incendies de forêt.',
-            'temperature': -0.2,
-            'argent': -80000,
+            'temperature': -0.02,
+            'argent': -800000,
 
         },
         {
             'texte': 'Mettre en place des politiques de gestion de l\'eau pour atténuer la sécheresse.',
             'temperature': -0.1,
-            'argent': -50000,
+            'argent': -500000,
 
         },
         {
@@ -408,13 +408,13 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir 20% dans des projets d\'urgence climatique, bonus : leadership dans la lutte mondiale',
-                'temperature': -0.25,
-                'argent': -50000,
+                'temperature': -0.05,
+                'argent': -500000,
             },
             {
                 'texte': 'Continuer à investir dans des secteurs moins durables (15%)',
-                'temperature': -0.2,
-                'argent': -45000,
+                'temperature': +0.18,
+                'argent': -450000,
             },
             {
                 'texte': 'Ne rien faire',
@@ -429,13 +429,13 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir 25% dans des technologies pour rendre les entreprises plus durables, bonus : adaptation rapide',
-                'temperature': -0.27,
-                'argent': -50000,
+                'temperature': -0.17,
+                'argent': -500000,
             },
             {
                 'texte': 'Consolidation des actifs pour minimiser les pertes (30%)',
-                'temperature': -0.22,
-                'argent': -55000,
+                'temperature': -0.12,
+                'argent': -550000,
             },
             {
                 'texte': 'Ne rien faire',
@@ -450,13 +450,13 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir 20% dans des projets liés à l\'hydrogène vert, bonus : énergie propre et polyvalente',
-                'temperature': -0.25,
-                'argent': -60000,
+                'temperature': -0.07,
+                'argent': -600000,
             },
             {
                 'texte': 'Continuer à investir dans des énergies fossiles (15%)',
-                'temperature': -0.2,
-                'argent': -55000,
+                'temperature': -0.02,
+                'argent': -550000,
             },
             {
                 'texte': 'Ne rien faire',
@@ -471,13 +471,13 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir 25% dans des projets de développement urbain durable, bonus : qualité de vie améliorée',
-                'temperature': -0.22,
-                'argent': -65000,
+                'temperature': -0.12,
+                'argent': -650000,
             },
             {
                 'texte': 'Continuer à investir dans des projets immobiliers conventionnels (20%)',
-                'temperature': -0.18,
-                'argent': -60000,
+                'temperature': -0.08,
+                'argent': -600000,
             },
             {
                 'texte': 'Ne rien faire',
@@ -492,13 +492,13 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Participer à des projets de captage et stockage du carbone (25%), bonus : leadership environnemental',
-                'temperature': -0.25,
-                'argent': -70000,
+                'temperature': -0.05,
+                'argent': -700000,
             },
             {
                 'texte': 'Financer des projets d\'adaptation aux changements climatiques (20%)',
-                'temperature': -0.2,
-                'argent': -65000,
+                'temperature': -0.02,
+                'argent': -650000,
             },
             {
                 'texte': 'Ignorer les enjeux environnementaux et maximiser les profits',
