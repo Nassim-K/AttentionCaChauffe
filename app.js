@@ -594,7 +594,8 @@ function changerAnnee() {
                     $(REP3).text(catastrophe.choix[2].texte);
                 }
 
-                function onRepClick(choiceIndex, choice) {
+                $(REP1).off().one("click", function () {
+                    var choice = catastrophe.choix[0];
                     argent += choice.argent;
                     temperature += choice.temperature;
                     $(ARGENT).text(argent);
@@ -602,23 +603,49 @@ function changerAnnee() {
                         temperature = 0;
                     }
                     $(TEMPERATURE).text('Température moyenne de la terre : ' + temperature + ' °C');
-                    $(TEMPERATURE_BARRE).css('width', temperature*(50/14.5) + '%');
+                    $(TEMPERATURE_BARRE).css('width', temperature * (50 / 14.5) + '%');
                     if (temperature <= 14.5) {
                         $(TEMPERATURE_BARRE).css('background-color', 'green');
                     } else {
                         $(TEMPERATURE_BARRE).css('background-color', 'red');
                     }
                     changerAnnee();
-                }
-
-                $(REP1).off().one("click", function () {
-                    onRepClick(0, catastrophe.choix[0]);
                 });
+                
                 $(REP2).off().one("click", function () {
-                    onRepClick(1, catastrophe.choix[1]);
+                    var choice = catastrophe.choix[1];
+                    argent += choice.argent;
+                    temperature += choice.temperature;
+                    $(ARGENT).text(argent);
+                    if (temperature < 0) {
+                        temperature = 0;
+                    }
+                    $(TEMPERATURE).text('Température moyenne de la terre : ' + temperature + ' °C');
+                    $(TEMPERATURE_BARRE).css('width', temperature * (50 / 14.5) + '%');
+                    if (temperature <= 14.5) {
+                        $(TEMPERATURE_BARRE).css('background-color', 'green');
+                    } else {
+                        $(TEMPERATURE_BARRE).css('background-color', 'red');
+                    }
+                    changerAnnee();
                 });
+                
                 $(REP3).off().one("click", function () {
-                    onRepClick(2, catastrophe.choix[2]);
+                    var choice = catastrophe.choix[2];
+                    argent += choice.argent;
+                    temperature += choice.temperature;
+                    $(ARGENT).text(argent);
+                    if (temperature < 0) {
+                        temperature = 0;
+                    }
+                    $(TEMPERATURE).text('Température moyenne de la terre : ' + temperature + ' °C');
+                    $(TEMPERATURE_BARRE).css('width', temperature * (50 / 14.5) + '%');
+                    if (temperature <= 14.5) {
+                        $(TEMPERATURE_BARRE).css('background-color', 'green');
+                    } else {
+                        $(TEMPERATURE_BARRE).css('background-color', 'red');
+                    }
+                    changerAnnee();
                 });
             }
         } else {
