@@ -141,6 +141,7 @@ body {
     flex-direction: column;
     gap:5px;
 }
+
 .flash .suivant{
     position:absolute;
     right:0;
@@ -164,11 +165,37 @@ body {
     box-shadow: 0px 6px 15px #681100cc;
 }
 
+.flash .rep1, .rep2, .rep3{
+    font-family: monospace;
+    color: #000000;
+    background-color:rgb(228, 227, 227);
+    border:unset;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.flash .rep1:hover, .rep2:hover, .rep3:hover{
+    background-color:rgb(67, 183, 0);
+    color: #ffffff;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
 
 .flash .presentateur {
     position:absolute;
     left:20px;
     bottom:0;
+}
+
+.flash span {
+    font-family: monospace;
+    color: #000000;
+    font-size:19px;
+    font-weight:bold;
 }
 
 .argent {
