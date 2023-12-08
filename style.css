@@ -142,13 +142,35 @@ body {
 }
 
 .argent {
+    display: flex;
+    align-content: center;
+}
+
+.argent img{
+    width: 40px;
+}
+
+.argent .valeurArgent {
     font-family: Hack, monospace;
     color: #ffffff;
     font-size:20px;
+    align-self: center;
+    margin-left: 10px;
 }
 
 .joker {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.joker img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.joker .valeurJoker {
     font-family: Hack, monospace;
     color: #ffffff;
     font-size:20px;
+    align-self: center;
 }
