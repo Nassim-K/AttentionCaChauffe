@@ -16,275 +16,297 @@ const REP3 = $('.reponses .rep3');
 
 const CATASTROPHES = {
     2001: {
-        'headline': "Selon un rapport de l'ONU sur la pollution plastique dans les océans, l'Asie est la région qui rejette le plus de déchets plastiques dans la mer. En 2001, l'Asie était responsable de 60 % des déchets plastiques rejetés dans les océans, soit environ 3,4 millions de tonnes.",
+        'headline': "Selon un rapport de l'ONU, l'Asie est la région qui rejette le plus de déchets plastiques dans la mer. En 2001, l'Asie était responsable de 60 % des déchets plastiques rejetés dans les océans.",
         'question': 'Que devriez-vous faire pour résoudre ce problème?',
         'choix': [
             {
                 'texte': 'Investir 25% dans des entreprises produisant des véhicules hybrides',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.15, // température diminuée aléatoirement
+                'argent': -1000000,
+
             },
             {
                 'texte': 'Mettre en place des politiques strictes de réduction des déchets plastiques',
-                'temperature': Math.random() * -0.75, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.07, // température diminuée aléatoirement
+                'argent': -200000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature':+0.12, // température augmentée aléatoirement
+
             }
         ]
     },
     2002: {
-        'headline': "Une sécheresse prolongée a frappé l'Afrique de l'Ouest en 2002, tuant plus de 100 000 personnes. La sécheresse a été causée par un phénomène climatique appelé 'El Niño', qui est exacerbé par le réchauffement climatique.",
+        'headline': "Une sécheresse prolongée a frappé l'Afrique de l'Ouest en 2002, tuant plus de 100 000 personnes. La sécheresse a été causée par un phénomène climatique appelé 'El Niño'.",
         'question': 'Comment devriez-vous réagir à cette crise environnementale majeure?',
         'choix': [
             {
                 'texte': "Augmenter le prix de l'essence en Europe pour encourager une conduite responsable",
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.02, // température diminuée aléatoirement
+                'argent': -500000,
             },
             {
                 'texte': 'Financer la recherche sur des technologies écologiques avancées (15%)',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature':-0.07, // température diminuée aléatoirement
+                'argent': -1020000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.17, // température augmentée aléatoirement
+                
             }
         ]
     },
     2003: {
-        'headline': "Une canicule record a frappé l'Europe en 2003, tuant plus de 70 000 personnes. La canicule a été attribuée à l'augmentation des températures moyennes dans la région.",
+        'headline': "Une canicule record a frappé l'Europe en 2003, tuant plus de 70 000 personnes.",
         'question': 'Comment devriez-vous réagir à cette crise environnementale majeure?',
         'choix': [
             {
                 'texte': 'Investir dans les énergies durables',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.05, // température diminuée aléatoirement
+                'argent': -1400000,
             },
             {
                 'texte': 'Mettre en place des politiques de réduction de la consommation d\'énergie',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.03, // température diminuée aléatoirement
+                'argent': -2800000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature':+0.10, // température augmentée aléatoirement
+
             }
         ]
     },
     2004: {
-        'headline': "Le tsunami de 2004 a été causé par un séisme sous-marin d'une magnitude de 9,1. Il a frappé l'Indonésie, le Sri Lanka, l'Inde et la Thaïlande, tuant plus de 225 000 personnes. Le tsunami a été exacerbé par l'élévation du niveau de la mer due au réchauffement climatique.",
+        'headline': "Le tsunami de 2004 a été causé par un séisme sous-marin d'une magnitude de 9,1. Il a frappé l'Indonésie, le Sri Lanka, l'Inde et la Thaïlande, tuant plus de 225 000 personnes.",
         'question': 'Comment devriez-vous réagir à cette catastrophe naturelle majeure?',
         'choix': [
             {
                 'texte': 'Investir dans des systèmes d\'alerte au tsunami et des infrastructures de protection côtière',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.05, // température diminuée aléatoirement
+                'argent': -100000,
             },
             {
                 'texte': 'Mettre en place des politiques de zonage pour restreindre le développement côtier',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.08, // température diminuée aléatoirement
+                'argent': -100000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature':+0.04, // température augmentée aléatoirement
+                
+            }
+        ]
+    },
+    2004: {
+        'headline': "Le tsunami de 2004 a été causé par un séisme sous-marin d'une magnitude de 9,1. Il a frappé l'Indonésie, le Sri Lanka, l'Inde et la Thaïlande, tuant plus de 225 000 personnes.",
+        'question': 'Comment devriez-vous réagir à cette catastrophe naturelle majeure?',
+        'choix': [
+            {
+                'texte': 'Investir dans des systèmes d\'alerte au tsunami et des infrastructures de protection côtière',
+                'temperature': -0.05,
+                'argent': -100000,
+            },
+            {
+                'texte': 'Mettre en place des politiques de zonage pour restreindre le développement côtier',
+                'temperature': -0.08,
+                'argent': -100000,
+            },
+            {
+                'texte': 'Ne rien faire et économiser l\'argent',
+                'temperature': +0.04,
+                
             }
         ]
     },
     2005: {
-        'headline': "En 2005, l'ouragan Katrina a frappé la côte sud des États-Unis, causant des inondations massives à La Nouvelle-Orléans et dans d'autres régions. La réponse lente et inefficace des autorités a été critiquée, et l'ouragan a mis en lumière les risques croissants liés aux tempêtes de plus en plus puissantes attribuées au changement climatique.",
+        'headline': "En 2005, l'ouragan Katrina a frappé la côte sud des États-Unis, causant des inondations massives à La Nouvelle-Orléans et dans d'autres régions.",
         'question': 'Comment devriez-vous réagir à cette catastrophe naturelle majeure?',
         'choix': [
             {
                 'texte': 'Investir dans la mise à niveau des infrastructures pour résister aux ouragans',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.1,
+                'argent': -100000,
             },
             {
                 'texte': 'Mettre en place des politiques de gestion des zones inondables et d\'évacuation',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.15,
+                'argent': -100000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.14,
+                
             }
         ]
     },
     2006: {
-        'headline': "Selon l'Organisation mondiale de la santé (OMS), en 2006, la pollution de l'air extérieur était responsable de plus de 2 millions de décès prématurés chaque année, principalement dans les pays en développement.",
+        'headline': "Selon l'Organisation mondiale de la santé (OMS), en 2006, la pollution de l'air extérieur était responsable de plus de 2 millions de décès prématurés chaque année.",
         'question': 'Comment devriez-vous réagir à cette crise sanitaire liée à la pollution de l\'air?',
         'choix': [
             {
                 'texte': 'Investir dans des technologies de réduction de la pollution de l\'air',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.15,
+                'argent': -500000,
             },
             {
                 'texte': 'Mettre en place des politiques strictes pour contrôler les émissions industrielles',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.08,
+                'argent': -600000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.17,
+                
             }
         ]
     },
     2007: {
-        'headline': "En 2007, le cyclone Sidr a frappé le Bangladesh, causant la mort de plus de 3 000 personnes. Les conséquences ont été aggravées par la vulnérabilité socio-économique de la région.",
-        'question': 'Comment devriez-vous réagir à cette catastrophe naturelle majeure?',
+        'headline': "En 2007, les experts ont averti que les émissions de gaz à effet de serre atteignaient des niveaux record, contribuant au changement climatique.",
+        'question': 'Que devriez-vous faire pour lutter contre le changement climatique?',
         'choix': [
             {
-                'texte': 'Investir dans des infrastructures résistantes aux cyclones et des systèmes d\'alerte précoce',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Investir massivement dans les énergies renouvelables (20%)',
+                'temperature': -0.13,
+                'argent': -1500000,
             },
             {
-                'texte': 'Mettre en place des politiques de réduction de la pauvreté et d\'amélioration de l\'éducation',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Mettre en place des réglementations strictes sur les émissions de gaz à effet de serre',
+                'temperature': -0.15,
+                'argent': -1200000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.09,
+                
             }
         ]
     },
     2008: {
-        'headline': "La Banque mondiale a souligné l'importance de la finance verte pour stimuler la croissance économique tout en atténuant les impacts négatifs sur l'environnement.",
-        'question': 'Comment devriez-vous répondre à la crise financière de 2008 avec des solutions durables?',
+        'headline': "La fonte accélérée des glaces en Arctique en 2008 a attiré l'attention sur les impacts du réchauffement climatique.",
+        'question': 'Comment devriez-vous réagir à cette crise environnementale majeure?',
         'choix': [
             {
-                'texte': 'Investir dans des projets d\'infrastructures durables pour stimuler l\'économie',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Investir dans la recherche sur le changement climatique et ses impacts (15%)',
+                'temperature': -0.11,
+                'argent': -1000000,
             },
             {
-                'texte': 'Soutenir financièrement des entreprises innovantes axées sur la durabilité',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Mettre en place des politiques pour réduire les émissions de gaz à effet de serre',
+                'temperature': -0.12,
+                'argent': -1300000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.05,
+                
             }
         ]
     },
     2009: {
-        'headline': "Selon l'Organisation mondiale de la santé (OMS), les pandémies futures pourraient être exacerbées par des facteurs tels que la mondialisation et le changement climatique.",
-        'question': 'Comment devriez-vous vous préparer aux pandémies futures en 2009?',
+        'headline': "En 2009, la crise économique mondiale a conduit à une diminution temporaire des émissions de gaz à effet de serre en raison d'une réduction de l'activité industrielle.",
+        'question': 'Comment devriez-vous réagir à cette opportunité de réduire les émissions?',
         'choix': [
             {
-                'texte': 'Investir dans la recherche médicale pour le développement de vaccins et de traitements',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Investir dans des projets de relance verte pour stimuler l\'économie',
+                'temperature': -0.15,
+                'argent': -800000,
             },
             {
-                'texte': 'Mettre en place des politiques de gestion des crises sanitaires et de renforcement des systèmes de santé',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Mettre en place des régulations plus strictes pour maintenir les émissions à des niveaux bas',
+                'temperature': -0.12,
+                'argent': -1000000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.1,
+                
             }
         ]
     },
     2010: {
-        'headline': "L'incident a mis en évidence les risques environnementaux liés à l'exploitation pétrolière en eaux profondes.",
-        'question': 'Comment devriez-vous gérer les risques environnementaux liés à l\'exploitation pétrolière en 2010?',
+        'headline': "En 2010, la marée noire de BP dans le golfe du Mexique a été l'une des pires catastrophes environnementales de l'histoire.",
+        'question': 'Comment devriez-vous réagir à cette catastrophe environnementale majeure?',
         'choix': [
             {
-                'texte': 'Investir dans des technologies de prévention des catastrophes pétrolières',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Augmenter les réglementations sur l\'industrie pétrolière et gazière',
+                'temperature': -0.12,
+                'argent': -800000,
             },
             {
-                'texte': 'Mettre en place des réglementations strictes pour encadrer l\'exploitation pétrolière',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Investir dans la recherche sur les énergies propres (15%)',
+                'temperature': -0.15,
+                'argent': -700000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.08,
+                
             }
         ]
     },
     2011: {
-        'headline': "Le Printemps arabe a souligné l'importance des questions socio-économiques et environnementales dans les mouvements populaires.",
-        'question': 'Comment devriez-vous répondre aux revendications socio-économiques en 2011?',
+        'headline': "En 2011, le Japon a été touché par un séisme et un tsunami, entraînant un accident nucléaire à la centrale de Fukushima.",
+        'question': 'Comment devriez-vous réagir à cette catastrophe nucléaire majeure?',
         'choix': [
             {
-                'texte': 'Investir dans des programmes de développement socio-économique pour répondre aux demandes des manifestants',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Favoriser le développement des énergies renouvelables et réduire la dépendance au nucléaire',
+                'temperature': -0.1,
+                'argent': -900000,
             },
             {
-                'texte': 'Mettre en place des réformes politiques pour répondre aux revendications démocratiques',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Renforcer les normes de sécurité nucléaire et investir dans la recherche sur les technologies nucléaires plus sûres',
+                'temperature': -0.15,
+                'argent': -1100000,
             },
             {
                 'texte': 'Ne rien faire et économiser l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.1,
+                
             }
         ]
     },
     2012: {
-        'headline': "La conférence a mis en lumière la nécessité d'actions coordonnées pour relever les défis mondiaux liés à la durabilité.",
-        'question': 'Comment devriez-vous coordonner les efforts internationaux pour la durabilité en 2012?',
+        'headline': "En 2012, la Banque mondiale a averti que le monde risquait de faire face à des pénuries d'eau critiques d'ici 2025.",
+        'question': 'Comment devriez-vous réagir à cette menace imminente de pénurie d\'eau?',
         'choix': [
             {
-                'texte': 'Renforcer la coopération internationale pour la mise en œuvre des objectifs de développement durable',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Investir dans des projets de gestion de l\'eau et de conservation (20%)',
+                'temperature': -0.05,
+                'argent': -1200000,
             },
             {
-                'texte': 'Investir dans des technologies vertes et des initiatives de développement durable au niveau national',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Mettre en place des politiques de réduction de la consommation d\'eau',
+                'temperature': -0.07,
+                'argent': -800000,
             },
             {
-                'texte': 'Ignorer les appels à l\'action internationale et se concentrer sur les préoccupations nationales',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'texte': 'Ne rien faire et économiser l\'argent',
+                'temperature': +0.08,
+                
             }
         ]
     },
     2013: {
-        'headline': "Les événements météorologiques extrêmes comme le Typhon Haiyan soulignent l'importance de l'adaptation aux changements climatiques.",
-        'question': 'Comment devriez-vous vous préparer aux événements météorologiques extrêmes en 2013?',
+        'headline': "En 2013, une étude a révélé que la déforestation progressait rapidement, mettant en danger la biodiversité et contribuant au changement climatique.",
+        'question': 'Que devriez-vous faire pour lutter contre la déforestation?',
         'choix': [
             {
-                'texte': 'Investir dans des infrastructures résilientes aux catastrophes naturelles',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Mettre en place des politiques de protection des forêts et de reforestation (20%)',
+                'temperature': -0.02,
+                'argent': -1000000,
             },
             {
-                'texte': 'Mettre en place des politiques de réduction des émissions de gaz à effet de serre pour lutter contre le changement climatique',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'texte': 'Imposer des sanctions sévères aux entreprises impliquées dans la déforestation',
+                'temperature': -0.08,
+                'argent': -900000,
             },
             {
-                'texte': 'Ignorer la nécessité d\'une adaptation aux changements climatiques',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'texte': 'Ne rien faire et économiser l\'argent',
+                'temperature': +0.1,
+                
             }
         ]
     },
@@ -294,18 +316,18 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir dans la modernisation des infrastructures d\'approvisionnement en eau potable',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.09,
+                'argent': -400000,
             },
             {
                 'texte': 'Renforcer les réglementations sur la qualité de l\'eau et les contrôles de sécurité',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.12,
+                'argent': -350000,
             },
             {
                 'texte': 'Ignorer les problèmes liés à la qualité de l\'eau pour économiser de l\'argent',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': 0.15,
+                
             }
         ]
     },
@@ -315,18 +337,18 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Soutenir activement les initiatives de l\'Accord de Paris (20%), bonus : partenariats internationaux',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.11,
+                'argent': -600000,
             },
             {
                 'texte': 'Investir dans des entreprises respectueuses de l\'environnement (25%)',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.06,
+                'argent': -500000,
             },
             {
                 'texte': 'Ignorer les obligations de l\'Accord de Paris et poursuivre les politiques actuelles',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.2,
+                
             }
         ]
     },
@@ -336,18 +358,18 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir dans des projets de conservation de la forêt amazonienne (25%), bonus : préservation de la biodiversité',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.13,
+                'argent': -550000,
             },
             {
                 'texte': 'Mettre en place des réglementations strictes sur l\'exploitation forestière',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.12,
+                'argent': -450000,
             },
             {
                 'texte': 'Ignorer les problèmes de déforestation pour favoriser le développement économique',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.25,
+                
             }
         ]
     },
@@ -357,39 +379,63 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir dans des initiatives d\'adaptation pour les communautés touchées',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.07,
+                'argent': -600000,
             },
             {
                 'texte': 'Plaider en faveur d\'accords internationaux sur les réfugiés climatiques',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.03,
+                'argent': -500000,
             },
             {
                 'texte': 'Ignorer la question des réfugiés climatiques',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.18,
+                
             }
         ]
     },
+    2018: {
+    'headline': "Sécheresse et incendies de forêt en Californie",
+    'question': 'Comment devriez-vous répondre à la crise environnementale majeure en Californie en 2018?',
+    'choix': [
+        {
+            'texte': 'Investir dans des technologies de prévention des incendies de forêt.',
+            'temperature': -0.02,
+            'argent': -800000,
+
+        },
+        {
+            'texte': 'Mettre en place des politiques de gestion de l\'eau pour atténuer la sécheresse.',
+            'temperature': -0.1,
+            'argent': -500000,
+
+        },
+        {
+            'texte': 'Ne rien faire et économiser l\'argent.',
+            'temperature': +0.15,
+
+
+        }
+    ]
+},
     2019: {
         'headline': "Urgence Climatique Mondiale",
         'question': 'Comment devriez-vous répondre à l\'urgence climatique mondiale en 2019?',
         'choix': [
             {
                 'texte': 'Investir 20% dans des projets d\'urgence climatique, bonus : leadership dans la lutte mondiale',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.05,
+                'argent': -500000,
             },
             {
                 'texte': 'Continuer à investir dans des secteurs moins durables (15%)',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': +0.18,
+                'argent': -450000,
             },
             {
                 'texte': 'Ne rien faire',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.15,
+                
             }
         ]
     },
@@ -399,18 +445,18 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir 25% dans des technologies pour rendre les entreprises plus durables, bonus : adaptation rapide',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.17,
+                'argent': -500000,
             },
             {
                 'texte': 'Consolidation des actifs pour minimiser les pertes (30%)',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.12,
+                'argent': -550000,
             },
             {
                 'texte': 'Ne rien faire',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.18,
+                
             }
         ]
     },
@@ -420,18 +466,18 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir 20% dans des projets liés à l\'hydrogène vert, bonus : énergie propre et polyvalente',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.07,
+                'argent': -600000,
             },
             {
                 'texte': 'Continuer à investir dans des énergies fossiles (15%)',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.02,
+                'argent': -550000,
             },
             {
                 'texte': 'Ne rien faire',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': 0.15,
+                
             }
         ]
     },
@@ -441,18 +487,18 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Investir 25% dans des projets de développement urbain durable, bonus : qualité de vie améliorée',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.12,
+                'argent': -650000,
             },
             {
                 'texte': 'Continuer à investir dans des projets immobiliers conventionnels (20%)',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.08,
+                'argent': -600000,
             },
             {
                 'texte': 'Ne rien faire',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'temperature': +0.2,
+                
             }
         ]
     },
@@ -462,18 +508,18 @@ const CATASTROPHES = {
         'choix': [
             {
                 'texte': 'Participer à des projets de captage et stockage du carbone (25%), bonus : leadership environnemental',
-                'temperature': Math.random() * -0.5, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.05,
+                'argent': -700000,
             },
             {
                 'texte': 'Financer des projets d\'adaptation aux changements climatiques (20%)',
-                'temperature': Math.random() * -0.25, // température diminuée aléatoirement
-                'argent': -10000,
+                'temperature': -0.02,
+                'argent': -650000,
             },
             {
-                'texte': 'Ne rien faire',
-                'temperature': Math.random() * 0.5, // température augmentée aléatoirement
-                'argent': 0,
+                'texte': 'Ignorer les enjeux environnementaux et maximiser les profits',
+                'temperature': +0.22,
+                
             }
         ]
     },
@@ -486,14 +532,14 @@ var annee;
 var probaCatastrophe = 1;
 
 function initGame() {
-    argent = 100000000;
+    argent = 5000000;
     joker = 3;
     temperature = 14.5;
     annee = 2000;
 
     $(ANNEE).text("Année : " + annee);
-    $(TEMPERATURE).text(temperature + ' °C');
-    $(TEMPERATURE_BARRE).css('width', temperature + '%');
+    $(TEMPERATURE).text('Température moyenne de la terre : ' + temperature + ' °C');
+    $(TEMPERATURE_BARRE).css('width', temperature*(50/14.5) + '%');
     $(ARGENT).text(argent);
     $(JOKER).text(joker);
 
@@ -501,8 +547,8 @@ function initGame() {
     $(REP2).hide();
     $(REP3).hide();
 
-    $(HEADLINE).text('BIENVENUE DANS LE JEU');
-    $(CONTENU).text('Vous allez devoir faire des choix pour sauver la planète. Bonne chance !');
+    $(HEADLINE).text('RETOUR DANS LES ANNEES 2000 : LA TERRE VOUS DONNE UNE SECONDE CHANCE');
+    $(CONTENU).text('Vous allez être confronté à de réelles catastrophes naturelles causées depuis 2000 à cause du réchauffement climatique. Vous allez devoir faire des choix stratégiques pour sauver la planète et éviter certaines catastrophes que nous avons connu tout en maintenant votre budget. En bref, faites mieux que ce que l\'humanité a fait ! Bonne chance !');
 }
 
 function changerAnnee() {
@@ -528,9 +574,23 @@ function changerAnnee() {
                 $(REP1).show();
                 $(REP2).show();
                 $(REP3).show();
-                $(REP1).text(catastrophe.choix[0].texte);
-                $(REP2).text(catastrophe.choix[1].texte);
-                $(REP3).text(catastrophe.choix[2].texte);
+                if (!isNaN(catastrophe.choix[0].argent)) {
+                    $(REP1).text(catastrophe.choix[0].texte + " - COÛT : " + Math.abs(catastrophe.choix[0].argent) + " $");
+                } else {
+                    $(REP1).text(catastrophe.choix[0].texte);
+                }
+                
+                if (!isNaN(catastrophe.choix[1].argent)) {
+                    $(REP2).text(catastrophe.choix[1].texte + " - COÛT : " + Math.abs(catastrophe.choix[1].argent) + " $");
+                } else {
+                    $(REP2).text(catastrophe.choix[1].texte);
+                }
+                
+                if (!isNaN(catastrophe.choix[2].argent)) {
+                    $(REP3).text(catastrophe.choix[2].texte + " - COÛT : " + Math.abs(catastrophe.choix[2].argent) + " $");
+                } else {
+                    $(REP3).text(catastrophe.choix[2].texte);
+                }
 
                 function onRepClick(choiceIndex, choice) {
                     argent += choice.argent;
@@ -539,8 +599,8 @@ function changerAnnee() {
                     if (temperature < 0) {
                         temperature = 0;
                     }
-                    $(TEMPERATURE).text(temperature + ' °C');
-                    $(TEMPERATURE_BARRE).css('width', temperature + '%');
+                    $(TEMPERATURE).text('Température moyenne de la terre : ' + temperature + ' °C');
+                    $(TEMPERATURE_BARRE).css('width', temperature*(50/14.5) + '%');
                     if (temperature <= 14.5) {
                         $(TEMPERATURE_BARRE).css('background-color', 'green');
                     } else {
@@ -572,5 +632,20 @@ $(document).ready(function () {
     $(SUIVANT).click(function () {
         $(SUIVANT).off("click");
         changerAnnee();
+    });
+
+    var k = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
+    n = 0;
+    $(document).keydown(function (e) {
+        if (e.keyCode === k[n++]) {
+            if (n === k.length) {
+                window.open("https://youtu.be/irOhM9HfNkM?si=B8ZhsEzS-mpRBVEs&t=64", '_blank').focus();
+                n = 0;
+                return false;
+            }
+        }
+        else {
+            n = 0;
+        }
     });
 });
